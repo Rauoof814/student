@@ -1,17 +1,44 @@
 <!doctype html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
-    <body>
-
-    <h1>Student List</h1>
-
-
-
-    </body>
+<html lang="en">
+<head>
+    <!-- HTML 5 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Students List</title>
+</head>
+<body>
+<div class="container">
+    <div class="list-container">
+        <h1>Student List</h1>
+        <ol id="studentList">
+            <!-- List populated by JavaScript -->
+        </ol>
+    </div>
+    <div class="form-container">
+        <h1>Add New Student</h1>
+        <form id="addStudentForm">
+            <label for="sid">SID:</label>
+            <input type="text" id="sid" name="sid" maxlength="11">
+            <label for="last">Last:</label>
+            <input type="text" id="last" name="last" maxlength="30">
+            <label for="first">First:</label>
+            <input type="text" id="first" name="first" maxlength="30">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <label for="gpa">GPA:</label>
+            <input type="text" id="gpa" name="gpa">
+            <label for="advisor">Advisor:</label>
+            <select id="advisor" name="advisor">
+                <!-- Options populated by JavaScript -->
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+<script src="../script/script.js"></script>
+</body>
 </html>
